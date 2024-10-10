@@ -49,6 +49,12 @@ int main()
 	InitWindow(800, 600, "raygui - controls test suite");
 	SetTargetFPS(60);
 
+	auto font = LoadFont("C:\\Users\\timofey.latypov\\Desktop\\Inter_24pt-Regular.ttf");
+	
+	GuiSetFont(font);
+
+	GuiSetStyle(DEFAULT, TEXT_SIZE, 24);
+
 	bool showMessageBox = false;
 
 	while (!WindowShouldClose())
